@@ -12,19 +12,50 @@
 <title>Library</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <h1>Library</h1>
+    <header class="">
+        Library
     </header>
-    <main class="container-fluid">
-        <div id="library" class="container-fluid">
-            <div class="box container-fluid">123</div>
-            <div class="box container-fluid">123</div>
-            <div class="box container-fluid">123</div>
-            <div class="box container-fluid">123</div>
-            <div class="box container-fluid">123</div>
+    <main class="">
+        <div id="button">
+            <button id="toggle" class="button">Add/Remove Book</button>
         </div>
+        <div id="inputs" class="not-visible">
+            <form action="/asd" id="addbook">
+                <label for="title">Book Title</label>
+                <input type="text" name="title" id="title" placeholder="Hamlet">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" placeholder="William Shakespeare">
+                <label for="cover">Cover</label>
+                <input type="text" name="cover" id="cover" placeholder="https://link-address.com/123.jpg">
+                <button class="button">Add</button>
+            </form>
+            <form action="/asd" id="removebook">
+                <label for="title">Book Title</label>
+                <input type="text" name="title" id="title" placeholder="Hamlet">
+                <button class="button">Delete</button>
+            </form>
+        </div>
+        <section id="library" class="">
+            <div class="book-container">
+                <div class="container-cover"><img class="image" src="https://kbimages1-a.akamaihd.net/e47e2687-2835-47ec-ba8e-fa4d83a3c628/353/569/90/False/don-quixote-87.jpg" alt=""></div>
+                <div class="container-info">Don Quixot by Miguel de Cervantes</div>
+            </div>
+            <div class="book-container">
+                <div class="container-cover"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQK7LQXO7A3tapI4nKyHYHVjrPnKTvY3ckF-g&usqp=CAU" alt=""></div>
+                <div class="container-info">Crime and Punishment by Fyodor Dostoevsky</div>
+            </div>
+            <div class="book-container">
+                <div class="container-cover"><img class="image" src="https://upload.wikimedia.org/wikipedia/en/9/96/The_Stand_cover.jpg" alt=""></div>
+                <div class="container-info">The Stand by Stephen King</div>
+            </div>
+            <div class="book-container">
+                <div class="container-cover"><img class="image" src="https://prodimage.images-bn.com/pimages/9780618968633_p0_v1_s550x406.jpg" alt=""></div>
+                <div class="container-info">The Hobbit by J. R. R. Tolkien</div>
+            </div>
+            
+        </section>
     </main>
-    <footer class="container-fluid">
+    <footer class="">
         <h4>Made by Tamtox</h4>
         <a href="https://github.com/Tamtox" target="_blank" id="github-link"><i class="fab fa-github"></i></i></a>
     </footer>

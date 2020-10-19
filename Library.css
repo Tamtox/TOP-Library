@@ -1,45 +1,143 @@
 *{
-    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
 }
-header {
-    display: flex;
-    justify-content: center;
-    height: 7vh;
-    border-bottom: black 1px solid;
+body{
+    height: 100vh;
 }
-#library {
-    display: grid;
-    min-height: 86vh;
-    grid-template-columns: 25% 25% 25% 25%;
-    justify-items: center;
-    align-content: center;
-    padding: 3vh 4vh 3vh 4vh;
+header{
+height: 7%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2.7rem;
+background-color: black;
+color: white;
 }
-.box {
-    width: 20vw;
-    height: 30vh;
-    border: solid 2px black;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: grid
+main{
+height: 85.9%;
+overflow: scroll;
+scrollbar-width: none;
+padding-bottom: 0.3% ;
 }
-footer {
-    height: 7vh;
+#button{
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+#toggle{
+    font-size: 1.5rem;
+    margin: auto;
+    margin: auto;
+    border-radius: 5%;
+}
+#inputs{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+#library{
+    width: 95%;
+    overflow: scroll;
+    scrollbar-width: none;
+    height: 100%;
+    margin: auto;
+    display: grid; 
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-auto-rows: 45%;
+    justify-content: space-evenly;
+    background-color: rgb(219, 150, 219);
+    border-radius: 10px;
+    grid-row-gap: 5%;
+}
+.book-container{
+    margin: 5% auto 5% auto;
+    display: grid;
+    height: 100%;
+    min-width: 100%;
+    grid-template-rows: 80% 20%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0px 0px 15px 0px rgb(0, 0, 0);
+}
+.container-cover{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.image{
+    max-width: 60%;
+    width: auto;
+    height: auto;
+}
+.container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top: black solid 1px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.button{
+    transition: 0.5s;
+}
+.button:hover{
+    transform: scale(1.05);
+    box-shadow:0px 0px 7px 0px rgb(0, 0, 0);
+}
+footer{
+height: 7%;
+border: black solid 1px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2.2rem;
+box-shadow:0px 0px 20px 0px rgb(0, 0, 0);
 }
 #github-link{
     color: black;
-    font-size: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1%;
 }
-#object {
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-    top: 1000px;
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    html{
+        font-size: 70%;
+    }
+    #library{
+    grid-template-columns: 70%;
+    }
+    .container-info{
+        font-size: 1.5rem;
+    }
+    
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    html{
+        font-size: 80%;
+    }
+    #library{
+    grid-template-columns: 40% 40%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    html{
+        font-size: 80%;
+    }
+    #library{
+    grid-template-columns: 40% 40%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    html{
+        font-size: 85%;
+    }
+    #library{
+        grid-template-columns: 25% 25% 25%;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    html{
+        font-size: 100%;
+    }
 }
